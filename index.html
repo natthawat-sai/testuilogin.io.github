@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>สมัครสมาชิก - Health App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mobile-container">
+        <div class="progress-container">
+            <div class="step-indicator active" id="indicator-1">1</div>
+            <div class="step-line"></div>
+            <div class="step-indicator" id="indicator-2">2</div>
+            <div class="step-line"></div>
+            <div class="step-indicator" id="indicator-3">3</div>
+        </div>
+
+        <div id="step-1" class="form-step">
+            <h2>สร้างบัญชีใหม่</h2>
+            <p class="subtitle">เริ่มต้นสุขภาพที่ดีไปกับเรา</p>
+            
+            <div class="input-group">
+                <label>อีเมล</label>
+                <input type="email" id="email" placeholder="example@email.com">
+            </div>
+            <div class="input-group">
+                <label>รหัสผ่าน</label>
+                <input type="password" id="password" placeholder="อย่างน้อย 8 ตัวอักษร">
+            </div>
+            <div class="input-group">
+                <label>ยืนยันรหัสผ่าน</label>
+                <input type="password" id="confirm-password" placeholder="กรอกรหัสผ่านอีกครั้ง">
+                <small id="error-msg" class="error-text hidden">รหัสผ่านไม่ตรงกัน</small>
+            </div>
+
+            <button class="btn-primary" id="btn-next-1">ถัดไป</button>
+            <button class="btn-secondary">มีบัญชีอยู่แล้ว? เข้าสู่ระบบ</button>
+        </div>
+
+        <div id="step-2" class="form-step hidden">
+            <h2>ยืนยันตัวตน</h2>
+            <p class="subtitle">เราได้ส่งรหัส 6 หลักไปที่อีเมลของคุณแล้ว</p>
+            
+            <div class="otp-container">
+                <input type="text" maxlength="1" class="otp-box">
+                <input type="text" maxlength="1" class="otp-box">
+                <input type="text" maxlength="1" class="otp-box">
+                <input type="text" maxlength="1" class="otp-box">
+                <input type="text" maxlength="1" class="otp-box">
+                <input type="text" maxlength="1" class="otp-box">
+            </div>
+
+            <button class="btn-primary" id="btn-next-2">ยืนยัน (Verify)</button>
+            <p class="resend-text">ส่งรหัสอีกครั้งใน <span id="countdown">60</span> วินาที</p>
+            <button class="btn-text" id="btn-back-1">ย้อนกลับ</button>
+        </div>
+
+        <div id="step-3" class="form-step hidden">
+            <h2>ข้อมูลส่วนตัว</h2>
+            <p class="subtitle">เพื่อเป้าหมายสุขภาพที่แม่นยำ</p>
+            
+            <div class="input-group">
+                <label>ชื่อ-นามสกุล</label>
+                <input type="text" placeholder="ชื่อของคุณ">
+            </div>
+            <div class="input-group">
+                <label>เป้าหมายของคุณ</label>
+                <select>
+                    <option>ลดน้ำหนัก</option>
+                    <option>สร้างกล้ามเนื้อ</option>
+                    <option>รักษาสุขภาพทั่วไป</option>
+                </select>
+            </div>
+
+            <button class="btn-primary" id="btn-finish">เริ่มต้นใช้งาน (Let's Go!)</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
