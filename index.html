@@ -58,19 +58,52 @@
         </div>
 
         <div id="step-3" class="form-step hidden">
-            <h2>ข้อมูลส่วนตัว</h2>
-            <p class="subtitle">เพื่อเป้าหมายสุขภาพที่แม่นยำ</p>
+         <div id="step-3" class="form-step hidden">
+            <h2>ข้อมูลสุขภาพของคุณ</h2>
+            <p class="subtitle">เพื่อการคำนวณที่แม่นยำและเหมาะสมกับคุณ</p>
             
             <div class="input-group">
-                <label>ชื่อ-นามสกุล</label>
+                <label>ชื่อ-นามสกุล หรือ ชื่อเล่น</label>
                 <input type="text" placeholder="ชื่อของคุณ">
             </div>
+
             <div class="input-group">
-                <label>เป้าหมายของคุณ</label>
+                <label>เพศ</label>
                 <select>
-                    <option>ลดน้ำหนัก</option>
+                    <option value="" disabled selected>เลือกเพศ</option>
+                    <option>ชาย</option>
+                    <option>หญิง</option>
+                    <option>ไม่ระบุ</option>
+                </select>
+            </div>
+
+            <div class="row-2">
+                <div class="input-group">
+                    <label>น้ำหนัก (กก.)</label>
+                    <input type="number" placeholder="เช่น 65" min="20" max="300">
+                </div>
+                <div class="input-group">
+                    <label>ส่วนสูง (ซม.)</label>
+                    <input type="number" placeholder="เช่น 170" min="50" max="250">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>ระดับการออกกำลังกาย</label>
+                <select>
+                    <option>ไม่ออกกำลังกายเลย</option>
+                    <option>เบาๆ (1-2 วัน/สัปดาห์)</option>
+                    <option>ปานกลาง (3-5 วัน/สัปดาห์)</option>
+                    <option>หนัก (6-7 วัน/สัปดาห์)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label>เป้าหมายหลัก</label>
+                <select>
+                    <option>ลดน้ำหนัก / ลดไขมัน</option>
                     <option>สร้างกล้ามเนื้อ</option>
-                    <option>รักษาสุขภาพทั่วไป</option>
+                    <option>รักษาสุขภาพ / ควบคุมน้ำหนัก</option>
                 </select>
             </div>
 
