@@ -81,3 +81,5 @@ button { width: 100%; padding: 15px; border-radius: 8px; font-weight: 600; curso
 
 /* ใช้ซ่อน/แสดง หน้าจอ */
 .hidden { display: none !important; }
+
+.row-2{display:flex;gap:15px;} .row-2 .input-group{flex:1;} .mobile-container{overflow-y:auto;} .mobile-container::-webkit-scrollbar{width:0px;background:transparent;}
